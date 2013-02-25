@@ -9,5 +9,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sasaplus1/ltsview.git"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha"
+  },
+  "devDependencies": {
+    "colors": "~0.6",
+    "mocha": "~1.8"
   }
 }
