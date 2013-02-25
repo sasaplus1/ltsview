@@ -1,0 +1,13 @@
+{
+  "name": "ltsview",
+  "version": "0.0.0",
+  "author": "sasa+1 <sasaplus1@gmail.com>",
+  "description": "LTSV viewer",
+  "bin": "./bin/ltsview",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasaplus1/ltsview.git"
+  }
+}
