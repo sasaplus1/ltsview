@@ -1,4 +1,4 @@
-# ltsview
+# ltsview [![Build Status](https://travis-ci.org/sasaplus1/ltsview.png)](https://travis-ci.org/sasaplus1/ltsview)
 
 [LTSV](http://ltsv.org/) viewer (inspired by [ltsview](http://metacpan.org/module/Text::LTSV/))
 
