@@ -11,6 +11,8 @@
     "url": "https://github.com/sasaplus1/ltsview.git"
   },
   "scripts": {
+    "fix": "fixjsstyle --strict --nojsdoc -r ./lib",
+    "lint": "gjslint --strict --nojsdoc -r ./lib",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha"
   },
   "devDependencies": {
