@@ -1,0 +1,27 @@
+{
+  "name": "ltsview",
+  "version": "0.1.0",
+  "author": "sasa+1 <sasaplus1@gmail.com>",
+  "description": "LTSV viewer",
+  "bin": "./bin/ltsview",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasaplus1/ltsview.git"
+  },
+  "scripts": {
+    "fix": "fixjsstyle --strict --nojsdoc -r ./lib",
+    "lint": "gjslint --strict --nojsdoc -r ./lib",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha"
+  },
+  "dependencies": {
+    "commander": "1.1.1",
+    "colors": "0.6.0-1",
+    "ltsv": "0.4.2"
+  },
+  "devDependencies": {
+    "colors": "~0.6",
+    "mocha": "~1.8"
+  }
+}
