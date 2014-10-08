@@ -1,6 +1,10 @@
-# ltsview [![Build Status](https://travis-ci.org/sasaplus1/ltsview.png)](https://travis-ci.org/sasaplus1/ltsview)
+# ltsview
 
-[LTSV](http://ltsv.org/) viewer (inspired by [ltsview](http://metacpan.org/module/Text::LTSV/))
+[![Build Status](https://travis-ci.org/sasaplus1/ltsview.svg)](https://travis-ci.org/sasaplus1/ltsview)
+[![Dependency Status](https://gemnasium.com/sasaplus1/ltsview.svg)](https://gemnasium.com/sasaplus1/ltsview)
+[![NPM version](https://badge.fury.io/js/ltsview.svg)](http://badge.fury.io/js/ltsview)
+
+[LTSV](http://ltsv.org/) viewer, inspired by [ltsview](http://metacpan.org/module/Text::LTSV/)
 
 ## Installation
 
@@ -14,19 +18,17 @@ $ npm install -g ltsview
 $ cat access.log | ltsview
 ```
 
+or
+
 ```sh
-$ ltsview -f access.log
+$ ltsview access.log
 ```
 
 ## Options
 
-### -f, --file
-
-read from file.
-
 ### -k, --keys
 
-show keys.
+filter keys.
 
 ```sh
 $ printf 'l1:v1\tl2:v2\nl3:v3' | ltsview
@@ -44,7 +46,7 @@ l3: v3
 
 ### -i, --ignore-keys
 
-hide keys.
+ignore keys.
 
 ```sh
 $ printf 'l1:v1\tl2:v2\nl3:v3' | ltsview
@@ -62,10 +64,6 @@ l3: v3
 
 no coloring output.
 
-### -s, --strict
-
-strict parse.
-
 ### -h, --help
 
 show usage.
@@ -76,4 +74,4 @@ show version.
 
 ## License
 
-The MIT License. Please see LICENSE file.
+The MIT license. Please see LICENSE file.

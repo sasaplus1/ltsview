@@ -1,6 +1,6 @@
 {
   "name": "ltsview",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "sasa+1 <sasaplus1@gmail.com>",
   "description": "LTSV viewer",
   "bin": "./bin/ltsview",
@@ -8,20 +8,23 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sasaplus1/ltsview.git"
+    "url": "git://github.com/sasaplus1/ltsview.git"
   },
   "scripts": {
-    "fix": "fixjsstyle --strict --nojsdoc -r ./lib",
-    "lint": "gjslint --strict --nojsdoc -r ./lib",
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha"
+    "fix": "fixjsstyle --flagfile .closurelinter -r ./bin -r ./lib -r ./test",
+    "lint": "gjslint --flagfile .closurelinter -r ./bin -r ./lib -r ./test",
+    "test": "mocha"
   },
   "dependencies": {
-    "commander": "1.1.1",
-    "colors": "0.6.0-1",
-    "ltsv": "0.4.2"
+    "colo": "0.2.0",
+    "commander": "2.3.0",
+    "ltsv": "0.7.5"
   },
   "devDependencies": {
-    "colors": "~0.6",
-    "mocha": "~1.8"
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.4"
+  },
+  "engines": {
+    "node": ">0.9"
   }
 }
