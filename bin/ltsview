@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-// ltsview Copyright(c) 2013 sasa+1
-// https://github.com/sasaplus1/ltsview
-// Released under the MIT License.
+/*!
+ * ltsview Copyright(c) 2013-2014 sasa+1
+ * https://github.com/sasaplus1/ltsview
+ * Released under the MIT license.
+ */
 
 require('../lib');
